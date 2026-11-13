@@ -1,0 +1,109 @@
+.todo-app {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 48px 20px;
+  text-align: left;
+}
+
+.todo-app h1 {
+  color: var(--text-h);
+  margin: 0 0 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  margin: 0;
+  color: var(--text-h);
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row input {
+  flex: 1;
+}
+
+input[type='email'],
+input[type='password'],
+.row input {
+  font: inherit;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+button {
+  font: inherit;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+button.link {
+  border: none;
+  background: none;
+  padding: 4px;
+}
+
+.error {
+  color: #d33;
+  margin: 0;
+}
+
+.todos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.todos label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text-h);
+}
+
+.todos li.done span {
+  text-decoration: line-through;
+  color: var(--text);
+}
+
+.notes {
+  margin-top: 24px;
+}
+
+.notes li span {
+  color: var(--text-h);
+}

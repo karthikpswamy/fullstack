@@ -1,0 +1,19 @@
+// Harbor Auth Configuration
+// This file is JSONC: JSON with // line and /* */ block comments.
+{
+  "appName": "react-vite-omega",
+
+  // Origins allowed for CORS and redirect validation. This list replaces the
+  // default (https://*.amplify.app), so it must name every origin the app is
+  // served from. Do NOT use ["*"], which disables both protections.
+  "trustedOrigins": [
+    "https://react-vite-omega-latest-test-244545.gamma.omega-test-app.com",
+    "https://harbor-react-vite-omega.gamma.amplify.app",
+    "http://localhost:5173"
+  ],
+
+  "emailAndPassword": {
+    // Enable email and password sign-in/sign-up.
+    "enabled": true
+  }
+}
